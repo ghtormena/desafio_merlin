@@ -11,7 +11,7 @@ from langchain.agents import (
 from langchain import hub
 from utils import get_profile_url_tavily
 
-def lookup(name: str) -> str:
+def linkedin_lookup(name: str) -> str:
     llm = ChatOpenAI(
         temperature=0,
         model_name="gpt-4o-mini",
